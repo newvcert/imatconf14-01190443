@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>استعلام کد گواهی</title>
+
+
+<style>
+
+@font-face {
+    font-family: IRANSans;
+    src: url("IRANSans.woff2");
+}
+
+
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+
+    margin:0;
+
+    font-family:IRANSans,Tahoma,Arial,sans-serif;
+
+    background:#f0f0f0;
+
+    font-size:13px;
+
+    color:#333;
+
+    line-height:1.8;
+
+}
+
+
+.container{
+
+    width:100%;
+
+    max-width:850px;
+
+    margin:35px auto;
+
+    padding:15px;
+
+}
+
+
+
+.card{
+
+    background:#fff;
+
+    border-radius:6px;
+
+    padding:35px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+
+
+.row{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    margin-bottom:18px;
+
+    font-size:14px;
+
+}
+
+
+
+.label{
+
+    width:180px;
+
+    font-weight:bold;
+
+    color:#555;
+
+}
+
+
+
+.value{
+
+    flex:1;
+
+    color:#4c83b2;
+
+    font-weight:500;
+
+}
+
+
+
+hr{
+
+    border:0;
+
+    border-top:1px solid #ddd;
+
+    margin:35px 0;
+
+}
+
+
+
+.link{
+
+    direction:ltr;
+
+    background:#fafafa;
+
+    border:1px solid #ddd;
+
+    padding:10px;
+
+    border-radius:4px;
+
+    width:100%;
+
+    color:#555;
+
+}
+
+
+
+.copy{
+
+    margin-top:8px;
+
+    color:#4c83b2;
+
+    font-size:20px;
+
+}
+
+
+
+.english{
+
+    direction:ltr;
+
+    text-align:left;
+
+}
+
+
+
+.button{
+
+    text-align:center;
+
+    margin-top:40px;
+
+}
+
+
+
+.button a{
+
+    display:inline-block;
+
+    background:#f6a347;
+
+    color:white;
+
+    padding:10px 35px;
+
+    border-radius:5px;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+}
+
+
+
+.button a:hover{
+
+    background:#e98c22;
+
+}
+
+
+
+@media(max-width:700px){
+
+
+.label{
+
+    width:100%;
+
+    margin-bottom:5px;
+
+}
+
+
+.card{
+
+    padding:20px;
+
+}
+
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<div class="card">
+
+
+
+<div class="row">
+
+<div class="label">
+استعلام کد گواهی :
+</div>
+
+<div class="value">
+imatconf14-01190443
+</div>
+
+</div>
+
+
+
+
+<div class="row">
+
+<div class="label">
+عنوان رویداد :
+</div>
+
+<div class="value">
+چهاردهمین کنفرانس بین‌المللی مهندسی مواد و متالورژی
+</div>
+
+</div>
+
+
+
+<div class="row">
+
+<div class="label">
+نوع گواهینامه :
+</div>
+
+<div class="value">
+ارائه مقاله
+</div>
+
+</div>
+
+
+
+
+<div class="row">
+
+<div class="label">
+عنوان مقاله :
+</div>
+
+<div class="value">
+بررسی چالش‌ها و فرصت‌های راه‌اندازی شرکت‌های نوپای دانش‌بنیان در حوزه مهندسی مواد
+</div>
+
+</div>
+
+
+
+
+<div class="row">
+
+<div class="label">
+نویسندگان :
+</div>
+
+<div class="value">
+محمدجواد ملکیان
+</div>
+
+</div>
+
+
+
+<div class="row">
+
+<div class="label">
+لینک دسترسی سریع :
+</div>
+
+<div class="value">
+
+<input class="link"
+value="https://verifypaper.github.io/imatconf14-01190443"
+readonly>
+
+
+<div class="copy">
+📋
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<hr>
+
+
+
+<div class="english">
+
+
+<div class="row">
+
+<div class="label">
+Certificate Code :
+</div>
+
+<div class="value">
+imatconf14-01190473
+</div>
+
+</div>
+
+
+
+<div class="row">
+
+<div class="label">
+Event Title :
+</div>
+
+<div class="value">
+
+14th International Conference on Materials Engineering & Metallurgy
+
+</div>
+
+</div>
+
+
+
+<div class="row">
+
+<div class="label">
+Certificate Type :
+</div>
+
+<div class="value">
+
+Paper Presentation
+
+</div>
+
+</div>
+
+
+
+
+<div class="row">
+
+<div class="label">
+Article Title :
+</div>
+
+<div class="value">
+
+An Investigation into the Challenges and Opportunities of Launching Knowledge-Based Startups in Materials Engineering
+
+</div>
+
+</div>
+
+
+
+<div class="row">
+
+<div class="label">
+Authors :
+</div>
+
+<div class="value">
+
+MohammadJavad Malekian
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<div class="button">
+
+<a href="#">
+
+مشاهده گواهینامه
+
+</a>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+</body>
+
+</html>
