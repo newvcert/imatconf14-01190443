@@ -10,18 +10,45 @@
 .button a{display:inline-block;background:#f6a347;color:#fff;padding:10px 35px;border-radius:5px;text-decoration:none;font-size:14px}
 .button a:hover{background:#e98c22}
 @media(max-width:700px){.label{width:100%;margin-bottom:5px}.card{padding:20px}.link{white-space:normal;word-break:break-all}}
+
+.modal{display:none;position:fixed;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,.9);z-index:9999}
+.toolbar{position:fixed;top:10px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:10000}
+.toolbar button,.toolbar a{padding:8px 12px;border:none;border-radius:5px;background:#fff;cursor:pointer;text-decoration:none;color:#000}
+.modal-content{display:block;margin:70px auto;max-width:90%;max-height:80vh;transform:scale(1);transition:.2s}
+.close{position:fixed;top:10px;right:20px;color:#fff;font-size:40px;cursor:pointer}
 </style></head><body><div class="container"><div class="card">
 <div class="row"><div class="label">استعلام کد گواهی :</div><div class="value">imatconf14-01190443</div></div>
 <div class="row"><div class="label">عنوان رویداد :</div><div class="value">چهاردهمین کنفرانس بین‌المللی مهندسی مواد و متالورژی</div></div>
 <div class="row"><div class="label">نوع گواهینامه :</div><div class="value">ارائه مقاله</div></div>
 <div class="row"><div class="label">عنوان مقاله :</div><div class="value">بررسی چالش‌ها و فرصت‌های راه‌اندازی شرکت‌های نوپای دانش‌بنیان در حوزه مهندسی مواد</div></div>
 <div class="row"><div class="label">نویسندگان :</div><div class="value">محمدجواد ملکیان</div></div>
-<div class="row"><div class="label">لینک دسترسی سریع :</div><div class="value"><div class="link">https://newvcert.github.io/imatconf14-01190443</div><div class="copy">📋</div></div></div>
+<div class="row"><div class="label">لینک دسترسی سریع :</div><div class="value"><div class="link">https://verifypaper.github.io/imatconf14-01190443</div><div class="copy">📋</div></div></div>
 <hr><div class="english">
 <div class="row"><div class="label">Certificate Code :</div><div class="value">imatconf14-01190443</div></div>
 <div class="row"><div class="label">Event Title :</div><div class="value">14th International Conference on Materials Engineering & Metallurgy</div></div>
 <div class="row"><div class="label">Certificate Type :</div><div class="value">Paper Presentation</div></div>
 <div class="row"><div class="label">Article Title :</div><div class="value">An Investigation into the Challenges and Opportunities of Launching Knowledge-Based Startups in Materials Engineering</div></div>
 <div class="row"><div class="label">Authors :</div><div class="value">MohammadJavad Malekian</div></div>
-<div class="row"><div class="label">Quick Access Link :</div><div class="value"><div class="link">https://newvcert.github.io/imatconf14-01190443</div><div class="copy">📋</div></div></div>
-</div><div class="button"><a href="#">مشاهده گواهینامه</a></div></div></div></body></html>
+<div class="row"><div class="label">Quick Access Link :</div><div class="value"><div class="link">https://verifypaper.github.io/imatconf14-01190443</div><div class="copy">📋</div></div></div>
+</div><div class="button"><a href="#" onclick="openCertificate();return false;">مشاهده گواهینامه</a></div>
+<div id="certificateModal" class="modal">
+<span class="close" onclick="closeCertificate()">&times;</span>
+<div class="toolbar">
+<button onclick="zoomIn()">+</button>
+<button onclick="zoomOut()">-</button>
+<button onclick="document.getElementById('certImg').requestFullscreen()">⤢</button>
+<a href="certificate-imatconf14-MM-02.pdf" download>⬇ PDF</a>
+<button onclick="printCertificate()">🖨</button>
+</div>
+<img id="certImg" class="modal-content" src="certificate-imatconf14-MM-02.jpg">
+</div></div></div>
+<script>
+let scale=1;
+function openCertificate(){document.getElementById('certificateModal').style.display='block';}
+function closeCertificate(){document.getElementById('certificateModal').style.display='none';}
+function zoomIn(){scale+=0.1;certImg.style.transform='scale('+scale+')';}
+function zoomOut(){scale=Math.max(.2,scale-.1);certImg.style.transform='scale('+scale+')';}
+certImg?.addEventListener?.('wheel',e=>{e.preventDefault();scale+=e.deltaY<0?0.1:-0.1;if(scale<.2)scale=.2;certImg.style.transform='scale('+scale+')';});
+function printCertificate(){let w=window.open('');w.document.write('<img src="certificate-imatconf14-MM-01.jpg" style="width:100%">');w.print();w.close();}
+window.onclick=e=>{if(e.target.id==='certificateModal')closeCertificate();}
+</script></body></html>
